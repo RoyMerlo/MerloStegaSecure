@@ -14,9 +14,6 @@
 - Tutto off-line: nessuna connessione internet richiesta.
 - Branding personalizzato: `POWERED BY ROY MERLO`.
 
-## 🖼️ Screenshot
-
-> (Aggiungi uno screenshot dell'interfaccia qui, se disponibile)
 
 ## 🛠️ Requisiti
 
