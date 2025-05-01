@@ -1,35 +1,78 @@
 # 🕵️‍♂️ StegaMerloSec
 
-**StegaMerloSec** è un'applicazione grafica in Python che combina **steganografia LSB** e **crittografia AES-256** per nascondere e proteggere messaggi di testo all'interno di immagini.
+**StegaMerloSec** is a graphical steganography tool that allows users to securely hide and extract encrypted text inside image files. It combines **AES-256 encryption** with **LSB steganography** for a double layer of data protection, all within a stylish and simple **Tkinter** GUI.
+
+---
+
+## 🔐 Features
+
+- 📷 Hide text messages inside PNG, BMP, JPG, JPEG, and WEBP images
+- 🛡️ Encrypts hidden text using **AES-256** (EAX mode) for strong confidentiality
+- 🔐 Password-protected text embedding and extraction
+- 💾 Save new stego-images to desired location
+- 🖥️ Intuitive and elegant GUI made with Tkinter
+- 🧪 Displays error messages for incorrect decryption or missing inputs
+- ⚡ "Powered by Roy Merlo" branding included
+
+---
+
+## 🛠 Requirements
+
+Install required packages using pip:
+
+```bash
+pip install stegano pycryptodome
+
 
 <img src="https://img.shields.io/badge/status-attivo-green" />
 <img src="https://img.shields.io/badge/made%20with-Python-blue" />
 
-## 🚀 Funzionalità
+🚀 How to Run
+bash
+Copy
+Edit
+python stegamerlo.py
+🧰 How It Works
+🔐 Hiding Text
+Click "Carica Immagine" to load a cover image.
 
-- Nascondi testo cifrato all'interno di immagini PNG, JPG, BMP, JPEG o WEBP.
-- Estrai testo criptato da un'immagine e decriptalo con una password.
-- Crittografia **AES-256** con **PBKDF2** per massima sicurezza.
-- Interfaccia grafica moderna con **Tkinter**.
-- Tutto off-line: nessuna connessione internet richiesta.
-- Branding personalizzato: `POWERED BY ROY MERLO`.
+Enter the text to hide.
+
+Enter a password.
+
+Click "🔐 Nascondi Testo" and choose a location to save the new image.
+
+The text is encrypted using AES-256 and embedded inside the image using LSB steganography.
+
+🔓 Revealing Text
+Load the image containing hidden text using "Carica Immagine".
+
+Enter the same password used for hiding.
+
+Click "🔓 Estrai Testo".
+
+If the password is correct, the original text is decrypted and displayed.
+
+📂 File Types Supported
+Input image formats: .png, .bmp, .jpg, .jpeg, .webp
+
+Output image format: .png (recommended for minimal compression)
+
+⚠️ Security Notes
+AES encryption uses a hardcoded salt (stega_merlo) for key derivation.
+
+For production-grade applications, make salt dynamic and securely stored.
+
+The system uses EAX mode for both confidentiality and integrity.
+
+✨ Credits
+GUI and logic by Roy Merlo
+
+Steganography via stegano library
+
+Cryptography via pycryptodome
+
+📃 License
+This project is open-source and free to use for educational or personal projects.
 
 
-## 🛠️ Requisiti
-
-- Python 3.x
-- Librerie Python:
-  - `tkinter` (inclusa in Python)
-  - `stegano`
-  - `pycryptodome`
-
-## 📦 Installazione
-
-Clona il repository e installa le dipendenze:
-
-```bash
-git clone https://github.com/tuo-username/stegamerlosec.git
-cd stegamerlosec
-pip install stegano pycryptodome
-
-![Stegamerlo](https://github.com/user-attachments/assets/1a9d8372-98a2-45c3-84f3-6463daf81071)
