@@ -2,7 +2,7 @@
 
 
 
-**StegaMerloSec** is a graphical steganography tool that allows users to securely hide and extract encrypted text inside image files. It combines **AES-256 encryption** with **LSB steganography** for a double layer of data protection, all within a stylish and simple **Tkinter** GUI.
+**MerloStegaSecure** is a graphical steganography tool that allows users to securely hide and extract encrypted text inside image files. It combines **AES-256 encryption** with **LSB steganography** for a double layer of data protection, all within a stylish and simple **Tkinter** GUI.
 
 ---
 ![20250513_2227_MerloStegaSecure 1 0_simple_compose_01jv5n77bzffvt04nnw6aps122](https://github.com/user-attachments/assets/6fe7b67f-1eb2-464a-b609-027042a69966)
